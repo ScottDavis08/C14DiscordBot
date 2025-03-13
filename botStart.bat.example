@@ -1,0 +1,5 @@
+@echo off
+@REM Set up the location the script is installed in.
+@REM The path to this bat file needs to be set up in a Startup shortcut or Task Scheduler (Windows).
+cd "C:\path\to\your\bot"
+node index.js
