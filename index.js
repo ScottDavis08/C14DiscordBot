@@ -15,7 +15,7 @@ client.once("ready", () => {
 client.on('guildScheduledEventCreate', (event) => {
     const channel = event.guild.channels.cache.find(ch => ch.name === "eventnotifications")
     if (channel) {
-        channel.send(`A new event has been created: **${event.name}**\n${event.url}`);
+        channel.send(`@everyone A new event has been created: **${event.name}**\n${event.url}`);
     }
 });
 
